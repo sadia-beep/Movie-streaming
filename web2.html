@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: white;
+            text-align: center;
+        }
+        .header {
+            background-color: #e50914;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .movies-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .movie {
+            margin: 15px;
+            width: 200px;
+            cursor: pointer;
+        }
+        .movie img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .movie-title {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Movie Streaming</div>
+    <div class="movies-container" id="movies-container">
+        <div class="movie" onclick="showMovieDetails('Movie 1')">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/jn3hocw0/poster/9/m/t/medium-hollywood-movie-wall-poster-spider-man-homecoming-spider-original-imaf9uubzgdycumg.jpeg?q=90&crop=false" alt="SPIDER-MAN">
+            <div class="movie-title">SPIDER-MAN</div>
+        </div>
+        <div class="movie" onclick="showMovieDetails('Movie 2')">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/poster/z/g/b/deadpool-comic-book-character-hollywood-movie-poster-original-imaecjz68dxa4ygf.jpeg?q=90&crop=false" alt="DEADPOOL">
+            <div class="movie-title">DEADPOOL</div>
+        </div>
+        <div class="movie" onclick="showMovieDetails('Movie 3')">
+            <img src="https://preview.redd.it/what-is-truly-the-worst-hollywood-mainstream-movie-poster-v0-eu48vn5wdokd1.jpeg?auto=webp&s=1c775883675401fc2023d7bb4f95f5ee6391bb09" alt="X-MEN">
+            <div class="movie-title">X-MEN</div>
+        </div>
+    </div>
+    
+    <script>
+        function showMovieDetails(movieName) {
+            alert("You selected: " + movieName);
+        }
+    </script>
+</body>
+</html>
